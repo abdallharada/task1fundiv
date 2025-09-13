@@ -1,0 +1,43 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  
+}
+label {
+    
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.formreg1 {
+    border: 3px solid;
+    padding-left:15%;
+}
+
+.buts1{
+    background-color:blue;
+    color:red;
+    margin:10px;
+    padding:10px;
+}
+#emailv{
+    margin-top:10px
+}

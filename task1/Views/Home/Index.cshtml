@@ -1,0 +1,85 @@
+﻿
+<h1>Register Page </h1>
+
+<section class="formreg1">
+
+@*<form>*@
+    <label>Email <input type="email" placeholder="Enter Your Email" id="emailv" title="Example@gmail.com" /></label>
+
+    <br />
+
+    <label>First Name <input type="text" placeholder="Enter Your First Name " title="Abdallah" /></label>
+
+    <br />
+
+    <label>Last Name <input type="text" placeholder="Enter Your Last Name" title="Arada"/></label>
+
+    <br />
+
+    <label>Password <input type="password" placeholder="Enter Your Password" id="passv" title="من 8 - 16 حرف ويحتوي على حرف كبير وصغير ورقم ورمز" /></label>
+
+    <br />
+
+    <label> City </label>
+    <select title="اختر مدينتك">
+        <option>Amman</option>
+        <option>Irbid</option>
+        <option>Jerash</option>
+        <option>Aqaba</option>
+        <option>Zarqa</option>
+    </select>
+    
+    <br />
+
+    <label> Gender </label>
+    <br />
+    <label> Male <input type="radio" name="Gender" title="اختر Male إذا كنت ذكر" /></label>
+    <label> Female <input type="radio" name="Gender" title="اختر Female إذا كنت أنثى" /></label>
+
+    <br />
+
+    <label>Study Level</label>
+
+    <br />
+    <label>BA<input type="checkbox" title="اختر إذا كان مستواك بكالوريوس" /></label>
+    <label>Master<input type="checkbox" title="اختر إذا كان مستواك ماجستير" /></label>
+    <label>PhD<input type="checkbox" title="اختر إذا كان مستواك دكتوراه" /></label>
+
+    <br />
+
+    <button onclick="Fun1()" class="buts1"> SAVE </button>
+
+
+@*</form>*@
+  </section>
+
+        <script>
+            function Fun1(){
+
+                  var email=document.getElementById("emailv").value;
+                  var password=document.getElementById("passv").value;
+          var pass=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/;
+
+           if(email==""){
+
+            alert("يجب إدخال البريد الإلكتروني");
+           
+                        }
+             else{
+
+                  }
+           if(!pass.test(password)){
+
+           alert("كلمة المرور غير صحيحة:\n- من 8 إلى 16 حرف\n- تحتوي على حرف كبير وصغير ورقم ورمز");
+
+            }
+
+            else{
+
+                }
+                alert("تم الحفظ بنجاح ");
+
+
+                      document.body.style.backgroundColor="Azure";
+  }
+        </script>
